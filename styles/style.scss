@@ -1,0 +1,106 @@
+/*Gray Ghost Theme by Rachel Fisher. */
+
+// Import Partials
+@import "palette";
+@import "fonts";
+
+// Import google fonts
+
+@import url('https://fonts.googleapis.com/css?family=IM+Fell+DW+Pica:400,400i|Open+Sans:400,400i,700,700i');
+
+// General Document Styling
+
+body {
+  padding-top: 5rem;
+  color: $primary-text-color;
+  background-color: $primary-color;
+
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $accent-color;
+  font-family: $serif-font;
+}
+
+p {
+  font-family: $sans-serif-font;
+}
+
+.btn {
+  background-color: $primary-color-light;
+  border: 1px solid $primary-color-dark;
+  color: $primary-text-color;
+  &:hover {
+    background-color: $primary-color;
+    color: $primary-color-text;
+    border: 1px solid $primary-color-dark
+  }
+}
+
+.pull-left {
+  float: left !important;
+}
+.pull-right {
+  float: right !important;
+}
+
+/* Navigation Styling */
+nav {
+  background-color: $primary-color-dark;
+  color: $primary-color-light;
+
+  a {
+    color: $primary-color-light;
+    &:hover {color: $accent-color; }
+  }
+    &:active {color: $accent-color;}
+    .navbar-brand {
+      color: $accent-color;
+      font-family: $serif-font;
+      &:hover {color: $primary-color-light; }
+    }
+
+  .btn {
+    border:  2px solid $primary-color-light;
+    background-color: $primary-color-dark;
+    color: $primary-color-light;
+    &:hover {
+      background-color: $primary-color-light;
+      color: $primary-text-color;
+    }
+  }
+}
+
+/* Section Headers */
+.section-header {
+  padding-bottom: 9px;
+  margin: 20px 0 20px;
+  border-bottom: 1px solid $divider-color;
+  font-family: $sans-serif-font;
+  color: $primary-color-light;
+}
+
+/* Card Styling */
+.card {
+  margin-bottom: 30px;
+  border: 1px solid $primary-color-dark;
+}
+
+.card-header {
+  background-color: $primary-color-dark;
+  color: $primary-color-light;
+  font-family: $sans-serif-font;
+}
+
+.card-block {
+  background-color: $primary-color-light;
+}
+
+.card-title {
+   margin: 0
+
+}
+
+.card-footer {
+  border-top: 1px solid $divider-color;
+}
